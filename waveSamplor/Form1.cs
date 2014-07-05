@@ -214,7 +214,7 @@ namespace waveSamplor
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Designed by FireKey Team:Fane.--http//www.fire-key.com", "Sampler",MessageBoxButtons .OK  , MessageBoxIcon.Asterisk);
+            
         }
     }
 }

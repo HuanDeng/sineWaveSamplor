@@ -40,9 +40,6 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.eXITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generateButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.arrayNameInput = new System.Windows.Forms.TextBox();
@@ -53,9 +50,7 @@
             this.showRefWave = new System.Windows.Forms.CheckBox();
             this.arrayOutput = new System.Windows.Forms.RichTextBox();
             this.dotShowCheck = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // SimulationChart
@@ -100,7 +95,7 @@
             // 
             // countInput
             // 
-            this.countInput.Location = new System.Drawing.Point(712, 113);
+            this.countInput.Location = new System.Drawing.Point(712, 25);
             this.countInput.Name = "countInput";
             this.countInput.Size = new System.Drawing.Size(85, 21);
             this.countInput.TabIndex = 2;
@@ -109,7 +104,7 @@
             // 
             // maxInput
             // 
-            this.maxInput.Location = new System.Drawing.Point(712, 140);
+            this.maxInput.Location = new System.Drawing.Point(712, 52);
             this.maxInput.Name = "maxInput";
             this.maxInput.Size = new System.Drawing.Size(85, 21);
             this.maxInput.TabIndex = 3;
@@ -118,7 +113,7 @@
             // 
             // minInput
             // 
-            this.minInput.Location = new System.Drawing.Point(712, 167);
+            this.minInput.Location = new System.Drawing.Point(712, 79);
             this.minInput.Name = "minInput";
             this.minInput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.minInput.Size = new System.Drawing.Size(85, 21);
@@ -129,7 +124,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(635, 116);
+            this.label1.Location = new System.Drawing.Point(635, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 5;
@@ -138,7 +133,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(635, 143);
+            this.label2.Location = new System.Drawing.Point(635, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 6;
@@ -147,7 +142,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(635, 170);
+            this.label3.Location = new System.Drawing.Point(635, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 7;
@@ -156,11 +151,10 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(801, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(801, 25);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -170,7 +164,7 @@
             this.toolStripMenuItem1,
             this.eXITToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(39, 21);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // toolStripMenuItem1
@@ -185,32 +179,11 @@
             this.eXITToolStripMenuItem.Text = "EXIT";
             this.eXITToolStripMenuItem.Click += new System.EventHandler(this.eXITToolStripMenuItem_Click);
             // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About...";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
             // generateButton
             // 
-            this.generateButton.Location = new System.Drawing.Point(637, 328);
+            this.generateButton.Location = new System.Drawing.Point(637, 297);
             this.generateButton.Name = "generateButton";
-            this.generateButton.Size = new System.Drawing.Size(160, 49);
+            this.generateButton.Size = new System.Drawing.Size(160, 77);
             this.generateButton.TabIndex = 9;
             this.generateButton.Text = "Generate";
             this.generateButton.UseVisualStyleBackColor = true;
@@ -219,7 +192,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(635, 197);
+            this.label4.Location = new System.Drawing.Point(635, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 12);
             this.label4.TabIndex = 11;
@@ -227,7 +200,7 @@
             // 
             // arrayNameInput
             // 
-            this.arrayNameInput.Location = new System.Drawing.Point(712, 194);
+            this.arrayNameInput.Location = new System.Drawing.Point(712, 106);
             this.arrayNameInput.Name = "arrayNameInput";
             this.arrayNameInput.Size = new System.Drawing.Size(85, 21);
             this.arrayNameInput.TabIndex = 10;
@@ -235,7 +208,7 @@
             // 
             // copyButton
             // 
-            this.copyButton.Location = new System.Drawing.Point(637, 379);
+            this.copyButton.Location = new System.Drawing.Point(637, 380);
             this.copyButton.Name = "copyButton";
             this.copyButton.Size = new System.Drawing.Size(160, 22);
             this.copyButton.TabIndex = 12;
@@ -246,7 +219,7 @@
             // hexOutPutCheck
             // 
             this.hexOutPutCheck.AutoSize = true;
-            this.hexOutPutCheck.Location = new System.Drawing.Point(637, 306);
+            this.hexOutPutCheck.Location = new System.Drawing.Point(637, 264);
             this.hexOutPutCheck.Name = "hexOutPutCheck";
             this.hexOutPutCheck.Size = new System.Drawing.Size(84, 16);
             this.hexOutPutCheck.TabIndex = 13;
@@ -256,7 +229,7 @@
             // halfCycleCheck
             // 
             this.halfCycleCheck.AutoSize = true;
-            this.halfCycleCheck.Location = new System.Drawing.Point(637, 220);
+            this.halfCycleCheck.Location = new System.Drawing.Point(637, 146);
             this.halfCycleCheck.Name = "halfCycleCheck";
             this.halfCycleCheck.Size = new System.Drawing.Size(126, 16);
             this.halfCycleCheck.TabIndex = 14;
@@ -268,7 +241,7 @@
             this.vectorDrawCheck.AutoSize = true;
             this.vectorDrawCheck.Checked = true;
             this.vectorDrawCheck.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.vectorDrawCheck.Location = new System.Drawing.Point(637, 286);
+            this.vectorDrawCheck.Location = new System.Drawing.Point(637, 236);
             this.vectorDrawCheck.Name = "vectorDrawCheck";
             this.vectorDrawCheck.Size = new System.Drawing.Size(108, 16);
             this.vectorDrawCheck.TabIndex = 16;
@@ -278,7 +251,7 @@
             // showRefWave
             // 
             this.showRefWave.AutoSize = true;
-            this.showRefWave.Location = new System.Drawing.Point(637, 242);
+            this.showRefWave.Location = new System.Drawing.Point(637, 176);
             this.showRefWave.Name = "showRefWave";
             this.showRefWave.Size = new System.Drawing.Size(138, 16);
             this.showRefWave.TabIndex = 18;
@@ -297,7 +270,7 @@
             // dotShowCheck
             // 
             this.dotShowCheck.AutoSize = true;
-            this.dotShowCheck.Location = new System.Drawing.Point(637, 264);
+            this.dotShowCheck.Location = new System.Drawing.Point(637, 206);
             this.dotShowCheck.Name = "dotShowCheck";
             this.dotShowCheck.Size = new System.Drawing.Size(114, 16);
             this.dotShowCheck.TabIndex = 17;
@@ -305,22 +278,11 @@
             this.dotShowCheck.UseVisualStyleBackColor = true;
             this.dotShowCheck.CheckedChanged += new System.EventHandler(this.dotShowCheck_CheckedChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(637, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 407);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.arrayOutput);
             this.Controls.Add(this.showRefWave);
             this.Controls.Add(this.dotShowCheck);
@@ -344,11 +306,10 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "mainForm";
-            this.Text = "Single-cycle Sine Wave Sampler";
+            this.Text = "Single-cycle Sine Wave Samplor";
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,9 +328,6 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem eXITToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button generateButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox arrayNameInput;
@@ -380,7 +338,6 @@
         private System.Windows.Forms.CheckBox showRefWave;
         private System.Windows.Forms.RichTextBox arrayOutput;
         private System.Windows.Forms.CheckBox dotShowCheck;
-        private System.Windows.Forms.PictureBox pictureBox1;
 
 
 
